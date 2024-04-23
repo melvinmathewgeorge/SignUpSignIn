@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Mysite | Welcome to Dashboard page{% endblock %}
+{% block extra_css %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Welcome to Your Dashboard</h1>
+</header>
+<div class="container">
+    <article>
+        <h2>Overview</h2>
+        <p>This is your dashboard page. You can customize this page to display useful information or functionality for your users.</p>
+        <p>For example, you could display recent activities, important notifications, or provide links to frequently used features of your application.</p>
+    </article>
+</div>
+{% endblock %}
